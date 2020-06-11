@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:background="@android:color/holo_blue_bright"
+        android:weightSum="10">
+
+        <Button
+            android:id="@+id/button_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="small" />
+
+        <Button
+            android:id="@+id/button_big"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+
+            android:text="Big" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="60"
+        android:background="@drawable/compass">
+
+        <Button
+            android:id="@+id/btn_north"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:text="@string/north" />
+
+        <Button
+            android:id="@+id/btn_south"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:text="@string/south" />
+
+        <Button
+            android:id="@+id/btn_east"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="0dp"
+            android:text="@string/east" />
+
+        <Button
+            android:id="@+id/btn_west"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="0dp"
+            android:text="@string/west" />
+
+        <Button
+            android:id="@+id/btn_center"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="0dp"
+            android:text="@string/center" />
+
+        <Button
+            android:id="@+id/btn_ne"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btn_north"
+            android:layout_above="@id/btn_east"
+            android:layout_toRightOf="@id/btn_north"
+            android:layout_toLeftOf="@id/btn_east"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="0dp"
+            android:text="NE" />
+
+        <Button
+            android:id="@+id/btn_nw"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btn_north"
+            android:layout_above="@id/btn_west"
+            android:layout_toRightOf="@id/btn_west"
+            android:layout_toLeftOf="@id/btn_north"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="0dp"
+            android:text="NW" />
+
+        <Button
+            android:id="@+id/btn_sw"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btn_west"
+            android:layout_above="@id/btn_south"
+            android:layout_toRightOf="@id/btn_west"
+            android:layout_toLeftOf="@id/btn_south"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="0dp"
+            android:text="SW" />
+
+        <Button
+            android:id="@+id/btn_se"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btn_east"
+            android:layout_above="@id/btn_south"
+            android:layout_toRightOf="@id/btn_north"
+            android:layout_toLeftOf="@id/btn_east"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="0dp"
+            android:text="SE" />
+
+    </RelativeLayout>
+
+</LinearLayout>

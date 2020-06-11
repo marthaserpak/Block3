@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Block3</string>
+    <string name="north">North</string>
+    <string name="south">South</string>
+    <string name="east">east</string>
+    <string name="west">west</string>
+    <string name="center">center</string>
+</resources>
